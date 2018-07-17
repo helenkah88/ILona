@@ -5,7 +5,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Own Carousel -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"> -->
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
@@ -30,8 +36,9 @@
                             <h1 class="">Launch Price Closing Soon</h1>
                             <div>The ultimate blueprint to starting a local video consulting based business with the ultimate local video software, premium coaches, training & tools</div>
                         </div>
-                        <div class="col-md-7 pt-5 pt-md-0">
-                            <img src="img/video-img.jpg" alt="">
+                        <div class="col-md-7 pt-5 pt-md-0 video-bl">
+                            <iframe src="https://player.vimeo.com/video/240747730?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <p><a href="https://vimeo.com/240747730">AdReel - Box&#039;s</a> from <a href="https://vimeo.com/user54924454">Video Suite</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                         </div>
                     </div>
                     <div class="countdown py-5 d-flex flex-column align-items-center text-white">
@@ -40,15 +47,15 @@
                         <div class="count d-flex justify-content-between my-5">
                             <div class="digit-item">
                                 <div class="digit">0</div>
-                                <span>hour</span>
+                                <span class="hour">hour</span>
                             </div>
                             <div class="digit-item">
                                 <div class="digit">0</div>
-                                <span>minute</span>
+                                <span class="minute">minute</span>
                             </div>
                             <div class="digit-item">
                                 <div class="digit">0</div>
-                                <span>second</span>
+                                <span class="second">second</span>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
@@ -187,12 +194,12 @@
             </section>
             <section class="section-6 py-5">
                 <div class="container">
-                    <div class="pb-5 border-gradient">
-                        <div class="text-center mb-5 px-4 px-md-0">
+                    <div class="pb-5">
+                        <div class="text-center mb-4 px-4 px-md-0">
                             <h3 class="underscore blue mb-3">Full Money Back Guarantee</h3>
                             <h6>We Are Making a Bold Statement and Taking Masive Action Toward Guaranteeing Your Success</h6>
                         </div>
-                        <div class="info-bl text-center my-5 py-4">
+                        <div class="info-bl text-center border-gradient py-5">
                             <div class="mb-4">If You do this programm, <span class="font-weight-bold">take action</span> and <span class="text-uppercase font-weight-bold">do not</span> good results, then we give you a full immediate refund, let You keep course materials AND gift You 100$ for trying it.out. We stand behind training 110% and the results back this up.</div>
                             <h4>This is why we can make this bold refund guarantee.</h4>
                         </div>
@@ -207,15 +214,15 @@
                             <div class="count d-flex justify-content-between my-5">
                                 <div class="digit-item">
                                     <div class="digit">0</div>
-                                    <span>hour</span>
+                                    <span class="hour">hour</span>
                                 </div>
                                 <div class="digit-item">
                                     <div class="digit">0</div>
-                                    <span>minute</span>
+                                    <span class="minute">minute</span>
                                 </div>
                                 <div class="digit-item">
                                     <div class="digit">0</div>
-                                    <span>second</span>
+                                    <span class="second">second</span>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
@@ -226,32 +233,41 @@
                     </div>
                     <div class="pt-5">
                         <h3 class="text-center underscore blue mb-5">Meet Some Of Our Prior Students Below</h3>
-                        <div id="car">
-                            <div class="px-3">
+                        <div class="slider" style="width: 400px; margin: auto;">
+                            <div class="py-2 card-wrapper d-flex">
                                 <div class="card pb-3">
-                                        <h5 class="card-title text-center py-4 px-2 mb-0">£1,750 ($2,321) + £750/mo ($995/mo) Within 5 hours Of This Training</h5>
-                                    <div class="card-body">
+                                    <h5 class="card-title text-center py-3 px-2 mb-0">£1,750 ($2,321) + £750/mo ($995/mo) Within 5 hours Of This Training</h5>
+                                    <div class="card-body align-items-center">
                                         <img class="card-img-top m-auto" src="img/slider-image-1.jpg" alt="Card image cap">
-                                        <button href="#" class="btn py-3 mt-4">Robert Stevens</button>
                                     </div>
+                                    <button href="#" class="btn py-3 mb-3">Robert Stevens</button>
                                 </div>
                             </div>
-                            <div class="px-3">
+                            <div class="py-2 card-wrapper d-flex">
                                 <div class="card pb-3">
-                                        <h5 class="card-title text-center py-4 px-2 mb-0">$18,000 Per Month In Recurring Revenue</h5>
-                                    <div class="card-body">
+                                    <h5 class="card-title text-center py-3 px-2 mb-0">$18,000 Per Month In Recurring Revenue</h5>
+                                    <div class="card-body align-items-center">
                                         <img class="card-img-top m-auto" src="img/slider-image-2.jpg" alt="Card image cap">
-                                        <button href="#" class="btn py-3 mt-4">Robert Stevens</button>
                                     </div>
+                                    <button href="#" class="btn py-3 mb-3">Robert Stevens</button>
                                 </div>
                             </div>
-                            <div class="px-3">
+                            <div class="py-2 card-wrapper d-flex">
                                 <div class="card pb-3">
-                                        <h5 class="card-title text-center py-4 px-2 mb-0">$60,000 Per Month In Recurring Revenue</h5>
-                                    <div class="card-body">
+                                    <h5 class="card-title text-center py-3 px-2 mb-0">$18,000 Per Month In Recurring Revenue</h5>
+                                    <div class="card-body align-items-center">
                                         <img class="card-img-top m-auto" src="img/slider-image-3.jpg" alt="Card image cap">
-                                        <button href="#" class="btn py-3 mt-4">Robert Stevens</button>
                                     </div>
+                                    <button href="#" class="btn py-3 mb-3">Robert Stevens</button>
+                                </div>
+                            </div>
+                            <div class="px-2 card-wrapper d-flex">
+                                <div class="card pb-3">
+                                    <h5 class="card-title text-center py-3 px-2 mb-0">$18,000 Per Month In Recurring Revenue</h5>
+                                    <div class="card-body align-items-center">
+                                        <img class="card-img-top m-auto" src="img/slider-image-3.jpg" alt="Card image cap">
+                                    </div>
+                                    <button href="#" class="btn py-3 mb-3">Robert Stevens</button>
                                 </div>
                             </div>
                         </div>
@@ -261,8 +277,9 @@
         </main>
         <div class="section-bottom">
             <div class="container">
-                <div class="text-center">
-                    <img src="img/video-img.jpg" alt="">
+                <div class="text-center video-bl">
+                    <iframe src="https://player.vimeo.com/video/240747730?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <p><a href="https://vimeo.com/240747730">AdReel - Box&#039;s</a> from <a href="https://vimeo.com/user54924454">Video Suite</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 </div>
                 <div class="countdown py-5 d-flex flex-column align-items-center text-white text-center text-md-left">
                     <h2 class="mb-3">This Special is No Longer Available</h2>
@@ -270,15 +287,15 @@
                     <div class="count d-flex justify-content-between my-5">
                         <div class="digit-item">
                             <div class="digit">0</div>
-                            <span>hour</span>
+                            <span class="hour">hour</span>
                         </div>
                         <div class="digit-item">
                             <div class="digit">0</div>
-                            <span>minute</span>
+                            <span class="minute">minute</span>
                         </div>
                         <div class="digit-item">
                             <div class="digit">0</div>
-                            <span>second</span>
+                            <span class="second">second</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -309,16 +326,21 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
-    <script type="text/javascript" src="vendor/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
-    <script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script type="text/javascript">
     $(document).ready(function() {
-        $('#car').slick({
+        $('.slider').slick({
+            paddingCenter: '40px',
+            infinite: true,
+            speed: 300,
             slidesToShow: 3,
-            prevArrow: "<button type='button' class='slick-prev pull-left'></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'></button>"
+            slidesToScroll: 1,
+            vertical: true,
+            arrows: true
         });
     });
     </script>
